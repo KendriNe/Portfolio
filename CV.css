@@ -107,6 +107,15 @@ img {
   border-radius: 500px;
 }
 
+img:hover {
+  box-shadow: black 20px 20px 20px;
+}
+
+img:active {
+  border: solid blue 5px;
+  box-shadow: none;
+}
+
 .container2 {
   display: flex;
   justify-content: space-around;
