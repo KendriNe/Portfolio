@@ -88,7 +88,7 @@ a {
 .diploma {
   background-color: #fa3267;
   padding: 30px;
-  margin-top: 150px;
+  margin-top: 50px;
   border-radius: 30px;
   text-align: center;
 }
@@ -113,7 +113,9 @@ img {
 }
 
 img:hover {
-  box-shadow: black 20px 20px 20px;
+  box-shadow: black 20px 20px 50px;
+  position: relative;
+  top: -10px;
 }
 
 img:active {
@@ -168,10 +170,9 @@ footer {
   margin-top: 100px;
   background-color: #fa3267;
   width: 100%;
-  height: 100%;
   font-size: 30px;
   text-align: center;
-  padding: 30px;
+  padding: 10px;
 }
 
 footer a {
