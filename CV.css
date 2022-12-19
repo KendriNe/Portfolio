@@ -21,6 +21,30 @@ a {
   color: lightseagreen;
 }
 
+.left hr {
+  color: white;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+  background-color: white;
+  margin: 10px 100px 25px 100px;
+  height: 100%;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+  padding: 15px;
+}
+
+footer p {
+  margin: 0;
+  padding: 15px;
+}
+
 nav {
   border: solid lightgray 2px;
   background-color: white;
@@ -116,7 +140,6 @@ nav {
   height: 100%;
 }
 
-
 table {
   background-color: lightsewhiteagreen;
   display: inline-block;
@@ -146,7 +169,7 @@ tr:nth-child(odd) {
   text-align: center;
   border: solid lightgray 2px;
   background: linear-gradient(
-    to right, 
+    to right,
     lightseagreen 0%,
     lightseagreen 50%,
     white 50%,
@@ -161,7 +184,7 @@ tr:nth-child(odd) {
   text-align: center;
   border: solid lightgray 2px;
   background: linear-gradient(
-    to right, 
+    to right,
     lightseagreen 0%,
     lightseagreen 35%,
     white 35%,
@@ -176,7 +199,7 @@ tr:nth-child(odd) {
   text-align: center;
   border: solid lightgray 2px;
   background: linear-gradient(
-    to right, 
+    to right,
     lightseagreen 0%,
     lightseagreen 75%,
     white 75%,
@@ -191,7 +214,7 @@ tr:nth-child(odd) {
   text-align: center;
   border: solid lightgray 2px;
   background: linear-gradient(
-    to right, 
+    to right,
     lightseagreen 0%,
     lightseagreen 75%,
     white 75%,
@@ -200,4 +223,86 @@ tr:nth-child(odd) {
   border-radius: 15px;
   width: 100%;
   height: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  nav {
+    margin: 0;
+  }
+
+  .information {
+    margin: 25px 0px 0px 0px;
+  }
+
+  footer {
+    margin: 25px 0px 0px 0px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .information {
+    display: block;
+    margin-top: 0;
+    padding-bottom: 25px;
+  }
+
+  .left {
+    width: 100%;
+    text-align: center;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  footer {
+    margin: 0;
+  }
+
+  .profilepicture {
+    margin-top: 50px;
+    border-radius: 148.4px;
+    width: 40%;
+    height: 296.8px;
+  }
+
+  .profilepicture a img {
+    object-position: center;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 148.4px;
+  }
+
+  .profilepicture:hover {
+    box-shadow: black 15px 15px 25px;
+    transition: 0.4s;
+  }
+
+  .profilepicture:active {
+    border: solid lightblue 2px;
+    box-shadow: none;
+  }
+
+  .right {
+    padding: 0;
+    text-align: center;
+  }
+
+  hr {
+    width: 80%;
+  }
+
+  table {
+    visibility: hidden;
+    display: none;
+  }
+
+  .hidden {
+    visibility: visible;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 480px) {
 }
