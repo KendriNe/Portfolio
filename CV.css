@@ -94,21 +94,21 @@ nav {
   width: 30%;
   height: 100%;
   padding-bottom: 30px;
+  padding: 25px;
 }
 
 .profilepicture {
   margin-top: 50px;
-  border-radius: 148.4px;
-  width: 75%;
-  height: 296.8px;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
 }
 
 .profilepicture a img {
-  object-position: center;
-  object-fit: cover;
   width: 100%;
   height: 100%;
-  border-radius: 148.4px;
+  object-fit: cover;
 }
 
 .profilepicture:hover {
@@ -249,6 +249,7 @@ tr:nth-child(odd) {
   .left {
     width: 100%;
     text-align: center;
+    padding: 0;
   }
 
   .right {
@@ -261,17 +262,15 @@ tr:nth-child(odd) {
 
   .profilepicture {
     margin-top: 50px;
-    border-radius: 148.4px;
-    width: 40%;
-    height: 296.8px;
+    border-radius: 50%px;
+    width: 250px;
+    height: 250px;
   }
 
   .profilepicture a img {
-    object-position: center;
     object-fit: cover;
     width: 100%;
     height: 100%;
-    border-radius: 148.4px;
   }
 
   .profilepicture:hover {
@@ -302,7 +301,4 @@ tr:nth-child(odd) {
     visibility: visible;
     display: block;
   }
-}
-
-@media screen and (max-width: 480px) {
 }
