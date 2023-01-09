@@ -93,35 +93,23 @@ footer p {
 
 .assignments {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  text-align: center;
+  flex-flow: column wrap;
 }
 
-.assignmentleft {
-  width: 250px;
-  height: 250px;
+.assignmentleft img {
+  width: 50%;
+  height: 500px;
+  object-fit: contain;
   border: 1px solid lightseagreen;
-  border-radius: 50%;
-  overflow: hidden;
 }
 
-.assignmentright {
-  width: 250px;
-  height: 250px;
+.assignmentright img {
+  width: 40%;
+  height: 500px;
+  object-fit: contain;
   border: 1px solid lightseagreen;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-.assignmentleft a img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.assignmentright a img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 
@@ -138,24 +126,16 @@ footer p {
     margin: 25px 0px 0px 0px;
   }
 
-  .assignmentright {
-    width: 250px;
-    height: 250px;
-    border: 1px solid lightseagreen;
-    border-radius: 50%;
-    overflow: hidden;
+  .assignmentleft img {
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
   }
   
-  .assignmentleft a img {
+  .assignmentright img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .assignmentright a img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 500px;
+    object-fit: contain;
   }
 
 }
