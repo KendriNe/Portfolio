@@ -25,6 +25,30 @@ h1, h2 {
   font-family: 'Montserrat', sans-serif !important;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+  background-color: white;
+  margin: 10px 100px 25px 100px;
+  height: 100%;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+  padding: 15px;
+}
+
+footer p {
+  margin: 0;
+  padding: 15px;
+}
+
 .menu ul {
   display: flex;
   font-size: 20px;
@@ -63,14 +87,43 @@ h1, h2 {
   width: 100%;
 }
 
-.right {
-  width: 100%;
-  text-align: right;
-}
-
 .left {
   width: 100%;
 }
+
+.assignments {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.assignmentleft {
+  width: 250px;
+  height: 250px;
+  border: 1px solid lightseagreen;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.assignmentright {
+  width: 250px;
+  height: 250px;
+  border: 1px solid lightseagreen;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.assignmentleft a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.assignmentright a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 
 @media screen and (max-width:800px) {
   nav {
@@ -80,4 +133,29 @@ h1, h2 {
   .information {
     margin: 25px 0px 0px 0px;
   }
+
+  footer {
+    margin: 25px 0px 0px 0px;
+  }
+
+  .assignmentright {
+    width: 250px;
+    height: 250px;
+    border: 1px solid lightseagreen;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .assignmentleft a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .assignmentright a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
 }
